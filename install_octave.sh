@@ -209,8 +209,8 @@ fi
 if [ "$build_devel" == "y" ]; then
 	octave_settings="$octave_settings --devel"
 fi
-if [ "$build_gui" == "n" ]; then
-	octave_settings="$octave_settings --without-gui"
+if [ "$build_gui" == "y" ]; then
+	octave_settings="$octave_settings --with-gui"
 fi
 if [ "$use_java" == "y" ]; then
 	octave_settings="$octave_settings --with-java"
